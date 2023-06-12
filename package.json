@@ -1,0 +1,15 @@
+{
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "Blog",
+    "author": "Th0be",
+    "license": "MIT",
+    "workspaces": [
+        "Backend/",
+        "Frontend/"
+    ],
+    "devDependencies": {
+        "typescript": "^5.1.3",
+        "@types/node": "^20.2.5"
+    }
+}

@@ -1,0 +1,27 @@
+name: blog
+services:
+  postgres:
+    container_name: postgres
+    image: "postgres:latest"
+    ports:
+      - 5432:5432
+    volumes:
+      - ../Database/:/var/lib/postgresql/data/
+    env_file:
+      - ./Backend/.env
+  adminer:
+    container_name: adminer
+    image: adminer
+    ports:
+      - 8080:8080
+    env_file:
+      - ./Backend/.env
+  backend:
+    container_name: backend
+    image: th0be/backend
+    ports:
+      - 3000:3000
+    build:
+      dockerfile: "./Backend/Dockerfile"
+    env_file:
+      - ./Backend/.env

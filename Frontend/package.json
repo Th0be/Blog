@@ -1,0 +1,8 @@
+{
+  "name": "@blog/frontend",
+  "version": "1.0.0",
+  "description": "Frontend for blog",
+  "scripts": {
+    "test": "echo Tested!"
+  }
+}
