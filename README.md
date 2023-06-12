@@ -1,7 +1,3 @@
-After file edit
+# Blog
 
-- docker compose up --build
-
-Then in backend container
-
-- npx prisma db push
+Monolitic repository of by personal blog.
